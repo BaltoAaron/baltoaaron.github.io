@@ -1,0 +1,147 @@
+<html> <head> <title>Fake Book</title>
+
+<style>
+body {
+  font-family: 'Courier';
+  font-size: 22px;
+}
+h2 {font-family: 'Courier';font-size: 50px;}
+#content {
+  padding-left: 50px;
+}
+a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+
+
+<script>
+
+function transpUp(songDiv) {
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G#", "X");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G", "G#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F#", "G");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F", "F#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("E", "F");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D#", "E");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D", "D#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C#", "D");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C", "C#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("B", "C");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A#", "B");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A", "A#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("X", "A");
+};
+
+function transpDown(songDiv) {
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G#", "zc");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G", "zb");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F#", "za");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F", "z9");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("E", "z8");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D#", "z7");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D", "z6");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C#", "z5");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C", "z4");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("B", "z3");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A#", "z2");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A", "z1");
+
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z1", "zz");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z2", "z1");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z3", "z2");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z4", "z3");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z5", "z4");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z6", "z5");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z7", "z6");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z8", "z7");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z9", "z8");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("za", "z9");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zb", "za");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zc", "zb");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zz", "zc");
+
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z1", "A");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z2", "A#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z3", "B");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z4", "C");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z5", "C#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z6", "D");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z7", "D#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z8", "E");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z9", "F");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("za", "F#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zb", "G");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zc", "G#");
+};
+
+</script>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAOUyqS2kexe6nvSB_3ZO_K5-T1xq8VLS4",
+    authDomain: "fake-book-db.firebaseapp.com",
+    databaseURL: "https://fake-book-db-default-rtdb.firebaseio.com",
+    projectId: "fake-book-db",
+    storageBucket: "fake-book-db.appspot.com",
+    messagingSenderId: "770756921438",
+    appId: "1:770756921438:web:b52a28da19db12ccd34ccf",
+    measurementId: "G-J0N9T2H7P1"
+  };
+
+    // Initialize Firebase
+    var firebase = initializeApp(firebaseConfig);
+
+    // Reference to the database
+    var database = firebase.database();
+
+    // Reference to the specific data you want to retrieve
+    var dataRef = database.ref('yourDataPath'); // Replace 'yourDataPath' with your actual path
+
+    // Retrieve data and display it
+    dataRef.on('value', function(snapshot) {
+      var data = snapshot.val();
+      console.log(data); // Log the retrieved data to the console
+
+      // You can now use the retrieved data to update your HTML elements
+      document.getElementById('data-display').textContent = JSON.stringify(data, null, 2);
+    });
+
+</script>
+
+
+</head>
+<body>
+<div id="content">
+<pre>
+<h2>Fake Book (2024-10-11)</h2>
+
+<div id="data-display"></div>
+
+
+
+</pre>
+</div>
+
+</body>
+
+</html>
+
+ 
