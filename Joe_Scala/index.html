@@ -1,0 +1,647 @@
+<html> <head> <title>Fake Book (Joe Book)</title>
+
+<style>
+body {
+  font-family: 'Courier';
+  font-size: 22px;
+}
+h2 {font-family: 'Courier';font-size: 50px;}
+#content {
+  padding-left: 50px;
+}
+a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+
+<script>
+
+function transpUp(songDiv) {
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G#", "X");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G", "G#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F#", "G");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F", "F#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("E", "F");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D#", "E");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D", "D#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C#", "D");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C", "C#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("B", "C");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A#", "B");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A", "A#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("X", "A");
+};
+
+function transpDown(songDiv) {
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G#", "zc");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("G", "zb");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F#", "za");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("F", "z9");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("E", "z8");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D#", "z7");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("D", "z6");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C#", "z5");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("C", "z4");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("B", "z3");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A#", "z2");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("A", "z1");
+
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z1", "zz");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z2", "z1");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z3", "z2");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z4", "z3");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z5", "z4");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z6", "z5");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z7", "z6");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z8", "z7");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z9", "z8");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("za", "z9");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zb", "za");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zc", "zb");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zz", "zc");
+
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z1", "A");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z2", "A#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z3", "B");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z4", "C");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z5", "C#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z6", "D");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z7", "D#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z8", "E");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("z9", "F");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("za", "F#");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zb", "G");
+document.getElementById(songDiv).innerHTML = document.getElementById(songDiv).innerHTML.replaceAll("zc", "G#");
+};
+
+</script>
+
+</head>
+<body>
+<div id="content">
+<pre>
+<h2>Fake Book (2026-05-30)</h2>
+<a href="#toca">A</a>  <a href="#tocb">B</a>  <a href="#tocc">C</a>  <a href="#tocd">D</a>  <a href="#toce">E</a>  <a href="#tocf">F</a>  <a href="#tocg">G</a>  <a href="#toch">H</a>  <a href="#toci">I</a>  <a href="#tocj">J</a>  <a href="#tock">K</a>  <a href="#tocl">L</a>  <a href="#tocm">M</a>  <a href="#tocn">N</a>  <a href="#toco">O</a>  <a href="#tocp">P</a>  <a href="#tocq">Q</a>  <a href="#tocr">R</a>  <a href="#tocs">S</a>  <a href="#toct">T</a>  <a href="#tocu">U</a>  <a href="#tocv">V</a>  <a href="#tocw">W</a>  <a href="#tocx">X</a>  <a href="#tocy">Y</a>  <a href="#tocz">Z</a>
+
+<div id="tocj"></div><a href="#sng233-s">Joe Scala            - Baltimore For Ya</a>
+<div id="tocj"></div><a href="#sng234-s">Joe Scala            - Can't Go Straight</a>
+<div id="tocj"></div><a href="#sng235-s">Joe Scala            - Daddy Got A Raise</a>
+<div id="tocj"></div><a href="#sng236-s">Joe Scala            - Dangerous and Strange</a>
+<div id="tocj"></div><a href="#sng237-s">Joe Scala            - Drag On</a>
+<div id="tocj"></div><a href="#sng238-s">Joe Scala            - Everyone Falls Apart</a>
+<div id="tocj"></div><a href="#sng239-s">Joe Scala            - Figure It Out</a>
+<div id="tocj"></div><a href="#sng240-s">Joe Scala            - Full Moon Ave</a>
+<div id="tocj"></div><a href="#sng241-s">Joe Scala            - Further Down River</a>
+<div id="tocj"></div><a href="#sng242-s">Joe Scala            - Giraffes</a>
+<div id="tocj"></div><a href="#sng243-s">Joe Scala            - Give It Up</a>
+<div id="tocj"></div><a href="#sng244-s">Joe Scala            - Grey Grey All Day</a>
+<div id="tocj"></div><a href="#sng245-s">Joe Scala            - Grounded</a>
+<div id="tocj"></div><a href="#sng246-s">Joe Scala            - Horse Is Blind</a>
+<div id="tocj"></div><a href="#sng247-s">Joe Scala            - Houston</a>
+<div id="tocj"></div><a href="#sng248-s">Joe Scala            - It's My Birthday</a>
+<div id="tocj"></div><a href="#sng249-s">Joe Scala            - Just A Taste</a>
+<div id="tocj"></div><a href="#sng250-s">Joe Scala            - Lady Jane</a>
+<div id="tocj"></div><a href="#sng251-s">Joe Scala            - Left Behind</a>
+<div id="tocj"></div><a href="#sng252-s">Joe Scala            - Luck</a>
+<div id="tocj"></div><a href="#sng253-s">Joe Scala            - Mirror Mirror</a>
+<div id="tocj"></div><a href="#sng254-s">Joe Scala            - Must Be You</a>
+<div id="tocj"></div><a href="#sng255-s">Joe Scala            - No Man</a>
+<div id="tocj"></div><a href="#sng256-s">Joe Scala            - Oh Momma</a>
+<div id="tocj"></div><a href="#sng257-s">Joe Scala            - Ragnarok</a>
+<div id="tocj"></div><a href="#sng258-s">Joe Scala            - Shooting For The Moon</a>
+<div id="tocj"></div><a href="#sng259-s">Joe Scala            - Skin And Bones</a>
+<div id="tocj"></div><a href="#sng260-s">Joe Scala            - Steal This Song</a>
+<div id="tocj"></div><a href="#sng261-s">Joe Scala            - Stoney Run</a>
+<div id="tocj"></div><a href="#sng262-s">Joe Scala            - Stranger Next Door</a>
+<div id="tocj"></div><a href="#sng263-s">Joe Scala            - The Champ Is Here</a>
+<div id="tocj"></div><a href="#sng264-s">Joe Scala            - There's A Light</a>
+<div id="tocj"></div><a href="#sng265-s">Joe Scala            - Under My Hood</a>
+<div id="tocj"></div><a href="#sng266-s">Joe Scala            - Wagon Wheel Song</a>
+<div id="tocj"></div><a href="#sng267-s">Joe Scala            - Was Not Made</a>
+<div id="tocj"></div><a href="#sng268-s">Joe Scala            - What Went Wrong</a>
+<div id="tocj"></div><a href="#sng269-s">Joe Scala            - Whiskey In The Bottle</a>
+<div id="tocj"></div><a href="#sng270-s">Joe Scala            - Whispers</a>
+<div id="tocj"></div><a href="#sng271-s">Joe Scala            - Wise Up</a>
+
+
+
+
+<div id="sng233-s"></div>
+<b>Joe Scala - Baltimore For Ya - D</b> 
+      <button onclick="transpDown('sng233')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng233')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng233">
+v: D D G
+   A A D (G-A)
+
+c: G G D
+   G A D D
+
+b: G G D D
+   G G G A A
+</div>
+
+<div id="sng234-s"></div>
+<b>Joe Scala - Can't Go Straight - D#</b> 
+      <button onclick="transpDown('sng234')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng234')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng234">
+v: D# A#... G#7
+
+c: D# C# G# A#m
+
+b: C# F#... G# A#m
+
+i(v+c) v1 c v2 c b s(v+c) b o
+</div>
+
+<div id="sng235-s"></div>
+<b>Joe Scala - Daddy Got A Raise - E</b> 
+      <button onclick="transpDown('sng235')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng235')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng235">
+  i: E(x4)  E(x4)
+
+v&c: E-A E
+     E   B
+     E   A
+     E-B E
+</div>
+
+<div id="sng236-s"></div>
+<b>Joe Scala - Dangerous and Strange - G</b> 
+      <button onclick="transpDown('sng236')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng236')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng236">
+i: G C...
+
+v: G Em F# G... C
+
+c: Em F# G C
+
+b: G Em F# G... C
+</div>
+
+<div id="sng237-s"></div>
+<b>Joe Scala - Drag On - E</b> 
+      <button onclick="transpDown('sng237')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng237')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng237">
+v: E B
+
+c: A E B ?
+</div>
+
+<div id="sng238-s"></div>
+<b>Joe Scala - Everyone Falls Apart - E</b> 
+      <button onclick="transpDown('sng238')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng238')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng238">
+i: E C#m...
+
+v: E C#m (x2)
+
+c: F#m B (x2)  (A-C#-C#-B)
+   A G# C#m
+   A B
+
+  1   2     3
+i v c v c s v c  
+          p q short
+</div>
+
+<div id="sng239-s"></div>
+<b>Joe Scala - Figure It Out - A</b> 
+      <button onclick="transpDown('sng239')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng239')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng239">
+v: A D...
+
+c: E D E D   D D
+
+b: D A D A   A A
+   D A D A   E E
+</div>
+
+<div id="sng240-s"></div>
+<b>Joe Scala - Full Moon Ave - C</b> 
+      <button onclick="transpDown('sng240')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng240')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng240">
+i: C Em Am
+
+v: Am C G Am
+
+c: C G Am
+   C G Em
+</div>
+
+<div id="sng241-s"></div>
+<b>Joe Scala - Further Down River - F#m</b> 
+      <button onclick="transpDown('sng241')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng241')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng241">
+i: F#m E...
+   F#m-A-B riff
+
+v: F#m... C# C#-C-B x2
+   C# C#-C-B
+   A B
+
+c: F#m E x2
+   F#m A B  F#m-A-B riff
+</div>
+
+<div id="sng242-s"></div>
+<b>Joe Scala - Giraffes - Gm</b> 
+      <button onclick="transpDown('sng242')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng242')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng242">
+v: Gm D...
+
+c: D C
+</div>
+
+<div id="sng243-s"></div>
+<b>Joe Scala - Give It Up - A</b> 
+      <button onclick="transpDown('sng243')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng243')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng243">
+v: A D...
+
+c: E D...
+</div>
+
+<div id="sng244-s"></div>
+<b>Joe Scala - Grey Grey All Day - A</b> 
+      <button onclick="transpDown('sng244')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng244')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng244">
+v: A E D A
+
+c: A E D Bm
+</div>
+
+<div id="sng245-s"></div>
+<b>Joe Scala - Grounded - A</b> 
+      <button onclick="transpDown('sng245')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng245')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng245">
+v: A D F#m E
+
+c: D A E
+   D F#m E... D E
+</div>
+
+<div id="sng246-s"></div>
+<b>Joe Scala - Horse Is Blind - G#</b> 
+      <button onclick="transpDown('sng246')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng246')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng246">
+v: G# (F#-G#)
+
+c: F# C#... (A-B-C#)
+</div>
+
+<div id="sng247-s"></div>
+<b>Joe Scala - Houston - G</b> 
+      <button onclick="transpDown('sng247')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng247')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng247">
+v: G C-G (x3)
+   G D C G
+
+c: C G C D
+   G D C G
+</div>
+
+<div id="sng248-s"></div>
+<b>Joe Scala - It's My Birthday - C</b> 
+      <button onclick="transpDown('sng248')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng248')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng248">
+v: C G G C
+
+c: F C D G
+</div>
+
+<div id="sng249-s"></div>
+<b>Joe Scala - Just A Taste - A</b> 
+      <button onclick="transpDown('sng249')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng249')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng249">
+v: A F#m...
+
+c: D E F#m^
+   D E F#m D E A
+</div>
+
+<div id="sng250-s"></div>
+<b>Joe Scala - Lady Jane - G</b> 
+      <button onclick="transpDown('sng250')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng250')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng250">
+v&c: G D Am C
+     G D C
+</div>
+
+<div id="sng251-s"></div>
+<b>Joe Scala - Left Behind - G#</b> 
+      <button onclick="transpDown('sng251')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng251')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng251">
+v: G# G# D# G#
+   G# G Fm D# (G#)
+
+v: C# D# G# G Fm  x2
+         G# G D# C#
+
+b: C# D# C# D#
+   C# D#-C#-G#
+</div>
+
+<div id="sng252-s"></div>
+<b>Joe Scala - Luck - G</b> 
+      <button onclick="transpDown('sng252')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng252')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng252">
+v&c: G Em
+     G Em-C 
+     G Em   Am C (Am C)
+
+i2 v2 v2 c2 s1 s2 v1 c1 c2
+</div>
+
+<div id="sng253-s"></div>
+<b>Joe Scala - Mirror Mirror - Em</b> 
+      <button onclick="transpDown('sng253')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng253')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng253">
+i: Em
+
+v: Em A D G B
+   Em A B...
+
+c: Em A D G B
+
+s: (verse)
+
+    1       2       3
+i c i v c i v c s i v c i
+                   p  p
+</div>
+
+<div id="sng254-s"></div>
+<b>Joe Scala - Must Be You - F#m</b> 
+      <button onclick="transpDown('sng254')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng254')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng254">
+v: F#m A...
+
+c: B B D-C#
+</div>
+
+<div id="sng255-s"></div>
+<b>Joe Scala - No Man - C#</b> 
+      <button onclick="transpDown('sng255')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng255')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng255">
+v&c: C# F# G#
+     A# D#
+
+i v1 C v2 c+ b v3 c
+</div>
+
+<div id="sng256-s"></div>
+<b>Joe Scala - Oh Momma - G#</b> 
+      <button onclick="transpDown('sng256')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng256')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng256">
+i: G# C A#m A#m
+   G# A#-B-C C-B-A#-G#
+
+v: G# C A#m C#
+   G# A#m... C C#
+
+c: G# (riff) G#...
+</div>
+
+<div id="sng257-s"></div>
+<b>Joe Scala - Ragnarok - D</b> 
+      <button onclick="transpDown('sng257')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng257')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng257">
+v: D Bm A^ Bm A
+   D Bm A^ Bm F#m
+
+c: G A Bm C#m
+   D Bm G A
+</div>
+
+<div id="sng258-s"></div>
+<b>Joe Scala - Shooting For The Moon - A</b> 
+      <button onclick="transpDown('sng258')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng258')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng258">
+v: A A7 E D
+
+c: D-Dm A-A7 D-Dm E D E D
+</div>
+
+<div id="sng259-s"></div>
+<b>Joe Scala - Skin And Bones - A</b> 
+      <button onclick="transpDown('sng259')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng259')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng259">
+v&c: A D A   D A E A  
+i 
+v1 
+v2 
+c 
+v3 (long E) 
+v4 (pause on D2) 
+c 
+c  (pause on D1) 
+i 
+v5 (quiet) 
+v6 (pause on D2) 
+c 
+c  (pause on D1)
+</div>
+
+<div id="sng260-s"></div>
+<b>Joe Scala - Steal This Song - E</b> 
+      <button onclick="transpDown('sng260')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng260')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng260">
+v: E... G-F#-F-E
+
+c: A E A G-F#-F-E
+</div>
+
+<div id="sng261-s"></div>
+<b>Joe Scala - Stoney Run - F#m</b> 
+      <button onclick="transpDown('sng261')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng261')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng261">
+v: F#m A E D
+
+c: A E D F#m
+   F#m A E F#m
+</div>
+
+<div id="sng262-s"></div>
+<b>Joe Scala - Stranger Next Door - E</b> 
+      <button onclick="transpDown('sng262')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng262')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng262">
+riff: E F#-G#
+
+   v: A F#m
+
+   b: F#m A  riff
+      F#m A D E
+</div>
+
+<div id="sng263-s"></div>
+<b>Joe Scala - The Champ Is Here - A</b> 
+      <button onclick="transpDown('sng263')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng263')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng263">
+v: A D A
+   A D E D
+
+c: D A D A  F#m^ Bm^ D
+   D A D A D A  F#m^
+
+b: A D F#m^ Bm^ D
+</div>
+
+<div id="sng264-s"></div>
+<b>Joe Scala - There's A Light - G</b> 
+      <button onclick="transpDown('sng264')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng264')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng264">
+i:   G C-G
+
+v:   G  G  C G  Em Em C G
+1st  Em Em C G  Em Em C G
+rest C G C G    Em Em C G
+
+c: C G D Em...
+   C G D D
+
+b: G... Em G...
+
+i v1 c i v2 c s(v1) v3 c
+</div>
+
+<div id="sng265-s"></div>
+<b>Joe Scala - Under My Hood - G</b> 
+      <button onclick="transpDown('sng265')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng265')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng265">
+ v: G D-C G
+
+pc: C G...
+    C G Em C D
+
+ c: G C  G C-G
+    Em  C D
+    C D G-F#-Em
+    C D
+    G C  G C-G
+</div>
+
+<div id="sng266-s"></div>
+<b>Joe Scala - Wagon Wheel Song - A</b> 
+      <button onclick="transpDown('sng266')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng266')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng266">
+v&c: A E F#m D
+     A E D
+</div>
+
+<div id="sng267-s"></div>
+<b>Joe Scala - Was Not Made - Em</b> 
+      <button onclick="transpDown('sng267')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng267')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng267">
+   v: Am Em
+
+   c: G D Em
+
+   b: C D Fm
+
+solo: Em Am... G D Em ???
+
+v c2 v c2 s2 v c2 s2 s3 v/
+</div>
+
+<div id="sng268-s"></div>
+<b>Joe Scala - What Went Wrong - E</b> 
+      <button onclick="transpDown('sng268')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng268')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng268">
+Edec: E D# C#m B F#m E
+
+i: Edec Edec + E
+v: Edec Edec
+c: B E
+   B Edec2 F# (no E)
+-------
+i: Edec + E
+v: Edec Edec
+c: B E
+   B Edec2 F# E (short)
+b: B E (short)
+   B Edec2 F# (no E)
+-------
+i: Edec + E
+v: Edec Edec
+c: B E
+   B Edec2 F# E (short)
+   B E
+   B Edec2 F# E (no E)
+o: Edec
+</div>
+
+<div id="sng269-s"></div>
+<b>Joe Scala - Whiskey In The Bottle - C</b> 
+      <button onclick="transpDown('sng269')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng269')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng269">
+i: C F C
+
+v: C F C
+   C F G
+   C F C
+   F G C
+
+c: F C F G
+</div>
+
+<div id="sng270-s"></div>
+<b>Joe Scala - Whispers - Cm</b> 
+      <button onclick="transpDown('sng270')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng270')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng270">
+v&c: Cm Eb
+     Cm G
+     Cm Eb
+     G G
+</div>
+
+<div id="sng271-s"></div>
+<b>Joe Scala - Wise Up - C#</b> 
+      <button onclick="transpDown('sng271')" style="font-size : 20px"> - </button> <button onclick="transpUp('sng271')" style="font-size : 20px"> + </button>   <a href="#">top</a>
+<div id="sng271">
+v: C#...
+
+c: F# C#
+   F# G#
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+
+</body>
+
+</html>
+
+ 
