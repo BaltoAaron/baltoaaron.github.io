@@ -6,7 +6,15 @@
     "editorWhitespace.foreground": "#504945",
     "editor.lineHighlightBackground": "#2B3C44",
     "editor.selectionBackground": "#1B5C6B",
-    "editor.inactiveSelectionBackground": "#30434C"
+    "editor.inactiveSelectionBackground": "#30434C",
+    "editorLineNumber.foreground": "#7C6F64",
+    "editorLineNumber.activeForeground": "#FDF4C1",
+    "editorGutter.background": "#282828",
+    "breadcrumb.background": "#282828",
+    "breadcrumb.foreground": "#7C6F64",
+    "breadcrumb.focusForeground": "#FDF4C1",
+    "breadcrumb.activeSelectionForeground": "#FDF4C1",
+    "breadcrumbPicker.background": "#282828"
   },
   "editor.tokenColorCustomizations": {
     "textMateRules": [
